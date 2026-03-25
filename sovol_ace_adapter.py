@@ -99,6 +99,6 @@ class SovolAceAdapter:
 
 if __name__ == "__main__":
     # function parameters: Agent IP, Agent Port, Printer IP
-    sovol_adapter = SovolAceAdapter('127.0.0.1', 7878, '192.168.1.56')
+    sovol_adapter = SovolAceAdapter('127.0.0.1', 7878, '192.168.1.8')
     sovol_adapter.adapter.start() # Starts the internal SHDR server
     sovol_adapter.gather_data() # Enters the infinite polling loop
