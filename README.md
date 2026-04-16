@@ -1,3 +1,7 @@
+This code is outdated, please visit new repository for the correct code - 4/16/26 Trevor
+
+
+
 # Sovol Ace MTConnect Adapter for Robotic Integration
 
 ## Project Overview
