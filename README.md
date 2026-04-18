@@ -1,6 +1,8 @@
 # **Sovol SV06 Ace MTConnect Digital Twin Interface**
 
-This repository contains the middleware and integration scripts required to synchronize a **Sovol SV06 Ace** 3D printer with a **Unity** virtual environment. The system utilizes the **MTConnect** standard (ANSI/MTC1.4-2018) to ensure a vendor-neutral, extensible data stream for real-time motion tracking and state monitoring.
+This repository contains the MTConnect Agent and Adapter configuration for the Sovol SV06 Ace 3D printer. This project is part of a research initiative for ME498/ME597 at Purdue University, focusing on the autonomous synchronization between a 3D printer and a robotic manipulator arm. The repository contains the middleware and integration scripts required to synchronize a **Sovol SV06 Ace** 3D printer with a **Unity** virtual environment.
+
+Using MTConnect standards, we provide a data stream that allows the robotic manipulator arm to monitor printer status, nozzle coordinates, and safety sensors to facilitate automated part removal.
 
 ---
 
