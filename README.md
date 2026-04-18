@@ -1,4 +1,4 @@
-## **ME597 New Cell-Based Manufacturing Code Files**
+## ME597 New Cell-Based Manufacturing Code Files**
 
 This repository contains the MTConnect Agent and Adapter configuration for the Sovol SV06 Ace 3D printer. This project is part of a research initiative for ME498/ME597 at Purdue University, focusing on the autonomous synchronization between a 3D printer and a robotic manipulator arm. The repository contains the middleware and integration scripts required to synchronize a **Sovol SV06 Ace** 3D printer with a **Unity** virtual environment.
 
