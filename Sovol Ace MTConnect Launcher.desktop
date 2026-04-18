@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Sovol Ace Launcher
+Comment=Start MTConnect Twin
+Exec=/bin/bash /home/pi/mtconnect_3dprinter/start_twin.sh
+Icon=utilities-terminal
+Terminal=true
+Type=Application
+Categories=Development;
+Path=/home/pi/Desktop/
