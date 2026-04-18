@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This is the config file for the MTConnect agent of Sovol Ace Printer for ME597 Class.
+MTConnect has several available standards documents detailing correct formatting for dataItems and the config file in general.
+Please refer to the MTConnect standard documentation for more information about how to modify this file.
+Created by Trevor Kates on 2/11/2026
+-->
+
+<MTConnectDevices xmlns:m="urn:mtconnect.org:MTConnectDevices:1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mtconnect.org:MTConnectDevices:1.5" xsi:schemaLocation="urn:mtconnect.org:MTConnectDevices:1.5 http://www.mtconnect.org/schemas/MTConnectDevices_1.5.xsd">
+    <Header creationTime="2026-02-11T11:00:00Z" sender="localhost" instanceId="1" bufferSize="131072" version="1.5" />
+    <Devices>
+        <Device id="sovol_ace" name="Sovol_SV06_Ace" uuid="purdue-me498-sovol-ace-001">
+            <Description manufacturer="Sovol" model="SV06 Ace">Sovol SV06 Ace 3D Printer</Description>
+            <DataItems>
+                <DataItem category="EVENT" id="avail" name="Availability" type="AVAILABILITY"/>
+            </DataItems>
+            <Components>
+                <Auxiliaries id="aux" name="Auxiliaries">
+                    <Components>
+                        <Heating id="bed" name="Bed">
+                            <DataItems>
+                                <DataItem category="SAMPLE" id="bed_temp" type="TEMPERATURE" units="CELSIUS" subType="ACTUAL"/>
+                                <DataItem category="EVENT" id="bed_mesh" type="OTHER"><Description>Bed Mesh Active: Leveling software compensation is enabled.</Description></DataItem>
+                            </DataItems>
+                        </Heating>
+                        <Heating id="ext" name="Extruder">
+                            <DataItems>
+                                <DataItem category="SAMPLE" id="ext_temp" type="TEMPERATURE" units="CELSIUS" subType="ACTUAL"/>
+                                <DataItem category="EVENT" id="fil_status" type="OTHER"><Description>Filament Runout: Robotic arm stays clear if 'OUT'.</Description></DataItem>
+                            </DataItems>
+                        </Heating>
+                        <Sensor id="cam" name="PNPCamera">
+                            <DataItems>
+                                <DataItem category="EVENT" id="part_ready" name="PartReady" type="OTHER"><Description>AI Handshake: 1 indicates print is ready for removal.</Description></DataItem>
+                                <DataItem category="SAMPLE" id="part_offset" name="PartOffset" type="PATH_POSITION" units="MILLIMETER"><Description>Coordinate shift from PNP model for precision gripping.</Description></DataItem>
+                            </DataItems>
+                        </Sensor>
+                    </Components>
+                </Auxiliaries>
+                <Axes id="ax" name="Axes">
+                    <Components>
+                        <Linear id="x" name="X"><DataItems><DataItem category="SAMPLE" id="x_pos" type="PATH_POSITION" units="MILLIMETER"/></DataItems></Linear>
+                        <Linear id="y" name="Y"><DataItems><DataItem category="SAMPLE" id="y_pos" type="PATH_POSITION" units="MILLIMETER"/></DataItems></Linear>
+                        <Linear id="z" name="Z"><DataItems><DataItem category="SAMPLE" id="z_pos" type="PATH_POSITION" units="MILLIMETER"/></DataItems></Linear>
+                    </Components>
+                </Axes>
+                <Controller id="ctrl" name="KlipperController">
+                    <DataItems>
+                        <DataItem category="EVENT" id="exec" type="EXECUTION"/>
+                        <DataItem category="EVENT" id="z_tilt" type="OTHER"><Description>Z-Tilt Active: Dual Z-axis alignment has been verified.</Description></DataItem>
+                    </DataItems>
+                    <DataItem category="EVENT" id="print_status" name="PrintStatus" type="OTHER">
+                        <Description>Descriptive status message from the printer display or macro.</Description>
+                    </DataItem>
+                    <DataItem category="SAMPLE" id="print_progress" name="PrintProgress" type="LOAD" units="PERCENT">
+                        <Description>Current print completion percentage (0-100%).</Description>
+                    </DataItem>
+                    <Components>
+                        <Path id="p" name="Path">
+                            <DataItems><DataItem category="EVENT" id="prog" type="PROGRAM"/></DataItems>
+                        </Path>
+                    </Components>
+                </Controller>
+            </Components>
+        </Device>
+    </Devices>
+</MTConnectDevices>
