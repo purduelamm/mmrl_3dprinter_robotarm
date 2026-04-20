@@ -10,7 +10,7 @@ cd "$DIR"
 CONFIG_FILE="printer_ip.txt"
 DEFAULT_IP="192.168.1.8"
 
-# 1. IP Selection Logic (Same as before)
+# 1. IP Selection Logic in case printer IP is different
 if [ -f "$CONFIG_FILE" ]; then
     SUGGESTED_IP=$(cat "$CONFIG_FILE")
 else
@@ -29,12 +29,11 @@ else
     echo "$TARGET_IP" > "$CONFIG_FILE"
 fi
 
-# 2. Kill old processes
+# 2. Kill any old agents running
 pkill -f sovol_ace_adapter.py
 pkill -f agent_run
 
-# 3. Launch the ADAPTER in a NEW Window
-# We add '; read' at the end so the window stays open if the script crashes
+# 3. Launch the sovol adapter in a new command prompt window
 lxterminal --title="MTConnect ADAPTER" -e "bash -c 'python3 $DIR/sovol_ace_adapter.py --ip $TARGET_IP; echo; echo [Process Ended]; read'" &
 
 # 4. Launch the AGENT in THIS Window
