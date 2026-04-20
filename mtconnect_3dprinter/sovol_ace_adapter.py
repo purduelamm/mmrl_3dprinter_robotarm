@@ -1,5 +1,7 @@
 # MTConnect adapter for Sovol Ace Printer
-# Updated 4/16/2026
+# This code polls the printer API and then takes all the JSON data and maps it to the MTConnect variables. 
+# The variables are then sent to the agent to be shared over a LAN connection
+# Updated 4/19/2026
 # Trevor Kates
 #!/usr/bin/env python3
 
