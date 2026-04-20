@@ -94,8 +94,8 @@ def main():
                 execution.set_value('UNAVAILABLE')
 
             adapter.complete_gather()
-            time.sleep(0.5) # Fast update for Unity smoothing
-
+            time.sleep(0.5) # Sends requests frequently to have a smooth digital twin in unity
+            
     except KeyboardInterrupt:
         avail.set_value('UNAVAILABLE')
         adapter.stop()
