@@ -20,11 +20,11 @@ The integration architecture is divided into four distinct layers to ensure low-
 ## **Repository Structure**
 
 * **`start_twin.sh`**: A shell script utilizing Zenity for the graphical configuration of the printer's IP address and automated process management.  
-* **`sovol_ace_adapter.py`**: The primary Python bridge optimized for Moonraker/Klipper JSON-RPC communication.  
+* **`sovol_ace_adapter.py`**: The primary Python bridge optimized for Moonraker/Klipper API through JSON files
 * **`agent_run` & `agent.cfg`**: The C++ MTConnect Agent executable and its associated configuration parameters.  
 * **`Device.xml`**: The MTConnect Device Information Model defining the component hierarchy (X, Y, Z axes, Extruder, and Bed).  
 * **`mtconnect_adapter.py` & `data_item.py`**: Supporting libraries for MTConnect-compliant data formatting.  
-* **`Sovol Ace MTConnect Launcher.desktop`**: A Linux desktop entry file for deployment in a workstation environment.
+* **`Sovol Ace MTConnect Launcher.desktop`**: A Linux desktop launcher for Raspberry Pi. Essentially it just runs the start_twin.sh file that launches the adapter and agent at the same time.
 
 ---
 
@@ -32,7 +32,7 @@ The integration architecture is divided into four distinct layers to ensure low-
 
 ### **1\. Environment Preparation**
 
-The system is designed to run on a Raspberry Pi or similar Linux-based edge device within the same local area network (LAN) as the printer.
+The system is designed to run on a Raspberry Pi within the same local area network (LAN) as the printer.
 
 Bash  
 \# Clone the repository and navigate to the directory  
