@@ -1,5 +1,5 @@
 # MTConnect adapter for Sovol Ace Printer
-# Updated 4/16/2026 for High-Speed Digital Twin Sync
+# Updated 4/16/2026
 # Trevor Kates
 #!/usr/bin/env python3
 
