@@ -1,4 +1,4 @@
-# Runs agent and adapter with less manual inputs
+# Runs agent and adapter with one file rather than needing to start both scripts manually
 # Updated 4/16/2026
 # Trevor Kates
 #!/bin/bash
