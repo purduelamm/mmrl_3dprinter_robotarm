@@ -5,7 +5,8 @@ MTConnect has several available standards documents detailing correct formatting
 Please refer to the MTConnect standard documentation for more information about how to modify this file.
 Created by Trevor Kates on 2/11/2026
 Note: Most of the data items in this code go unused but I wanted to include as many variables as possible. 
-Refer to the data_item.py script to read more about what is in here.
+This google sheets file explains the different parameters included in the printer API that are in this xml 
+https://docs.google.com/spreadsheets/d/1USQvGvC8SHUuFOWi_LOtpQju_SxD1xpkkGeocQ5PY7o/edit?gid=1204488128#gid=1204488128
 -->
 
 <MTConnectDevices xmlns:m="urn:mtconnect.org:MTConnectDevices:1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mtconnect.org:MTConnectDevices:1.5" xsi:schemaLocation="urn:mtconnect.org:MTConnectDevices:1.5 http://www.mtconnect.org/schemas/MTConnectDevices_1.5.xsd">
