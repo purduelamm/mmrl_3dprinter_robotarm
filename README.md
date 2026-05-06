@@ -124,13 +124,13 @@ The low-angle mount addresses both issues by repositioning the camera below the 
 
 The mount is a single-piece print designed to clamp onto the printer's vertical Z-axis aluminum extrusion. The camera body sits in a recessed cradle angled forward roughly 30° from vertical, secured against the housing.
 
-![Low-angle camera mount — CAD model](camera_mount_model.png)
+![Low-angle camera mount — CAD model](camera_mount_installed.png)
 
 ### **Installed View**
 
 When installed on the printer, the mount integrates cleanly with the existing teal-colored Sovol housing aesthetic:
 
-![Low-angle camera mount — installed on printer](camera_mount_installed.png)
+![Low-angle camera mount — installed on printer](camera_mount_model.png)
 
 ### **Resulting Camera Perspective**
 
