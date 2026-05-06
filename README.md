@@ -8,6 +8,8 @@ Using MTConnect standards, we provide a data stream that allows the robotic mani
 
 ## **System Architecture**
 
+<img width="472" height="592" alt="Pasted Graphic" src="https://github.com/user-attachments/assets/012ee785-b94a-4593-a7a6-71ae4531ceca" />
+
 The integration architecture is divided into two parallel data pipelines.
 
 ### **Kinematic Pipeline (MTConnect)**
